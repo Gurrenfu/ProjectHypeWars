@@ -45,32 +45,38 @@ public class PlayerCombat : MonoBehaviour
         animator.SetBool("isShooting", false);
     }
 
+
+    
     public void SimpleMelee(InputAction.CallbackContext Value)
     {
         if(Value.started)
         {
             animator.SetBool("isSwinging", true);
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(swingPoint.position, swingRange, targets);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
+            //get an array of all the colliders within the circlecast
+            Collider2D[] inRangeColliders = Physics2D.OverlapCircleAll(swingPoint.position, swingRange, targets);
+            List<IDamageable> damagedObjecteds = new List<IDamageable>();
+
+            for (int i = 0; i < inRangeColliders.Length; i++)
             {
-                IDamageable damageableObject = enemiesToDamage[i].GetComponent<IDamageable>();
-                if (damageableObject != null)
+                //if the collider has a IDamageabl compoment and the damage has not been applied then apply damage and add it to the list of already applied damage
+                IDamageable damageableObject = inRangeColliders[i].GetComponent<IDamageable>();
+                if (damageableObject != null && !damagedObjecteds.Contains(damageableObject))
                 {
+                    damagedObjecteds.Add(damageableObject);
                     damageableObject.TakeDamage(swingDamage);
-       
                 }
             }
         }
         StartCoroutine(StopSwinging());
     }
-
+    
 
     private IEnumerator StopSwinging()
     {
         yield return new WaitForSeconds(.25f);
         animator.SetBool("isSwinging", false);
     }
-
+    
 
     private void OnDrawGizmosSelected()
     {

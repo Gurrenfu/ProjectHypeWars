@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 9087296071748446886}
   - component: {fileID: 5172840903041989380}
   - component: {fileID: 5172840903041989381}
-  - component: {fileID: 5172840903041989382}
+  - component: {fileID: 2300998636158542956}
   - component: {fileID: 5172840903041989378}
   - component: {fileID: 4434951641857335171}
   - component: {fileID: 4698307901714288553}
@@ -151,6 +151,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -239,7 +240,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.027315259, y: -0.32928163}
+  m_Offset: {x: 0.027315259, y: -0.30862993}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -250,9 +251,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.74109435, y: 0.6388303}
-  m_EdgeRadius: 0.03
---- !u!58 &5172840903041989382
+  m_Size: {x: 0.74109435, y: 0.6440897}
+  m_EdgeRadius: 0.05
+--- !u!58 &2300998636158542956
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,9 +266,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.030000001, y: -0.8452223}
+  m_Offset: {x: 0.0141159, y: -0.87271464}
   serializedVersion: 2
-  m_Radius: 0.3500225
+  m_Radius: 0.3245403
 --- !u!114 &5172840903041989378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,6 +298,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5172840903041989384}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
@@ -312,6 +314,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5172840903041989384}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Jump
         m_Mode: 0
         m_Arguments:
@@ -327,6 +330,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5172840903041989384}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Crouch
         m_Mode: 0
         m_Arguments:
@@ -342,6 +346,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7498983495679755790}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Shoot
         m_Mode: 0
         m_Arguments:
@@ -357,6 +362,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7498983495679755790}
+        m_TargetAssemblyTypeName: 
         m_MethodName: GamepadMoveCrosshair
         m_Mode: 0
         m_Arguments:
@@ -372,6 +378,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7498983495679755790}
+        m_TargetAssemblyTypeName: 
         m_MethodName: MouseMoveCrosshair
         m_Mode: 0
         m_Arguments:
@@ -387,6 +394,7 @@ MonoBehaviour:
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7498983495679755790}
+        m_TargetAssemblyTypeName: 
         m_MethodName: SimpleMelee
         m_Mode: 0
         m_Arguments:
@@ -463,6 +471,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5172840903041989384}
+        m_TargetAssemblyTypeName: 
         m_MethodName: OnLanding
         m_Mode: 1
         m_Arguments:
@@ -477,6 +486,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5172840903041989384}
+        m_TargetAssemblyTypeName: 
         m_MethodName: OnCrouching
         m_Mode: 0
         m_Arguments:
@@ -617,6 +627,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

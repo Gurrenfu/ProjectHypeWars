@@ -38,6 +38,5 @@ public class PlayerManager : MonoBehaviour, IPlayerService,  IDamageable
         }
            
     }
-
    
 }
