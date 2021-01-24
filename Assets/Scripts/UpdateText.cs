@@ -12,9 +12,9 @@ public class UpdateText : MonoBehaviour
     void Update()
     {
         if (multiPlayerManager.playerStatsList.Count > 1)
-            healthText.text =  "P1 Health: " + multiPlayerManager.playerStatsList[0].Health.ToString() + ", P2 Health: " + multiPlayerManager.playerStatsList[1].Health.ToString();
+            healthText.text =  "P1 Score: " + multiPlayerManager.playerStatsList[0].Score.ToString() + ", P2 Score: " + multiPlayerManager.playerStatsList[1].Health.ToString();
         else if(multiPlayerManager.playerStatsList.Count > 0)
-            healthText.text = "P1 Health: " + multiPlayerManager.playerStatsList[0].Health.ToString();
+            healthText.text = "P1 Score: " + multiPlayerManager.playerStatsList[0].Score.ToString();
 
     }
 }

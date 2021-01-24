@@ -12,6 +12,7 @@ public class PlayerStats
     [SerializeField] private int _score = 0;
     [SerializeField] private int _killCount = 0;
     [SerializeField] private int _deathCount  = 0;
+    //inventory goes here;
 
 
     /// <summary>

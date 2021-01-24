@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RespawnPoint : MonoBehaviour
+public class SpawnPoint : MonoBehaviour
 {
-    public RespawnPointRTS RunTimeSet;
+    public SpawnPointRTS RunTimeSet;
 
     private void OnEnable()
     {

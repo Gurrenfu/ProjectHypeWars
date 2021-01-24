@@ -7,7 +7,7 @@ public class PlayerManager : MonoBehaviour, IPlayerService,  IDamageable
     public int health;
     private int fullHealth;
     public PlayerStats playerStats { get; set; }
-    [SerializeField] private RespawnPointRTS respawnPoints;
+    [SerializeField] private SpawnPointRTS respawnPoints;
     
     void Awake()
     {
@@ -23,7 +23,7 @@ public class PlayerManager : MonoBehaviour, IPlayerService,  IDamageable
     public void Respawn()
     {
         playerStats.Health = fullHealth;
-        gameObject.transform.position = respawnPoints.getRespawnPoint();
+        gameObject.transform.position = respawnPoints.getSpawnPoint();
     }
 
    
