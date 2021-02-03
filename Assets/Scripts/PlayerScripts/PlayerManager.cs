@@ -6,14 +6,15 @@ public class PlayerManager : MonoBehaviour, IPlayerService,  IDamageable
 {
     public int health;
     private int fullHealth;
+    private PlayerRespawner playerRespawner;
     public PlayerStats playerStats { get; set; }
-    [SerializeField] private SpawnPointRTS respawnPoints;
     
     void Awake()
     {
+       playerRespawner = FindObjectOfType<PlayerRespawner>();
        fullHealth = health;
     }
-
+   
     public void setDefaultValues()
     {
         playerStats.Player = gameObject;
@@ -23,7 +24,7 @@ public class PlayerManager : MonoBehaviour, IPlayerService,  IDamageable
     public void Respawn()
     {
         playerStats.Health = fullHealth;
-        gameObject.transform.position = respawnPoints.getSpawnPoint();
+        gameObject.transform.position = playerRespawner.GetSpawnPointPosition();
     }
 
    

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01c09d84ec013a34686ef06cc2a5f337, type: 3}
-  m_Name: PointObjectSpawnPointsRTS
+  m_Script: {fileID: 11500000, guid: 25f76f6a35e677640b148a9423e93875, type: 3}
+  m_Name: PointObjRTS
   m_EditorClassIdentifier: 
   Items: []

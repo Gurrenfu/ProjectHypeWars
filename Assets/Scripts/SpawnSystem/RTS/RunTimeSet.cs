@@ -1,4 +1,4 @@
-﻿
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,9 +12,10 @@ public abstract class RunTimeSet<T> : ScriptableObject
             Items.Add(thing);
     }
 
-    public void Remove(T thing)
+    public virtual void Remove(T thing)
     {
         if (Items.Contains(thing))
             Items.Remove(thing);
     }
-}
+ }
+

@@ -14,7 +14,8 @@ public class PlayerStats
     [SerializeField] private int _deathCount  = 0;
     //inventory goes here;
 
-
+  
+    
     /// <summary>
     /// get and set values of properties
     /// </summary>
